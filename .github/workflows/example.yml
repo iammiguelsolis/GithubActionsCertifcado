@@ -9,4 +9,9 @@ jobs:
       - uses: actions/checkout@v4
       - run: npm install
       - run: npm test
-      - run: echo :"Todo listo!"
+
+  deploy:
+    needs: example
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Desplegando la aplicación..."
