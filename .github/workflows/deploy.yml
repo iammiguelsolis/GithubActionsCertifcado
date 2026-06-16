@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hola Mundo
-        run: echo "Hola Mundo"
+        run: echo "Hola Mundo  ${{ github.ref }}"
       - name: CAT
         run: cat hola.php 
 
